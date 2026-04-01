@@ -1,0 +1,11 @@
+# これは、Bufプロジェクトの主要な設定ファイルです
+version: v1
+name: buf.build/shugo1125/greet-proto  # プロジェクトの一意な識別子
+deps:
+  - buf.build/googleapis/googleapis  # Google APIの依存関係を追加
+breaking:
+  use:
+    - FILE  # ファイルレベルでの破壊的変更検出を有効にします
+lint:
+  use:
+    - DEFAULT  # デフォルトのlintルールを使用します（コードの品質チェック）

@@ -1,0 +1,15 @@
+# このファイルは、TypeScript用のコード生成設定を定義します
+version: v1
+managed:
+  enabled: true  # Bufによる自動管理を有効にします
+
+plugins:
+  # 標準的なTypeScriptコードを生成するプラグイン
+  - plugin: es
+    out: gen/ts  # 生成されたコードの出力先ディレクトリ
+    opt: target=ts  # TypeScript向けのコードを生成するオプション
+
+  # Connect-Web（TypeScript用のgRPC互換HTTPクライアント）用のコードを生成するプラグイン
+  - plugin: connect-es
+    out: gen/ts  # 生成されたコードの出力先ディレクトリ
+    opt: target=ts  # TypeScript向けのコードを生成するオプション

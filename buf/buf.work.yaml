@@ -1,0 +1,3 @@
+version: v1
+directories:
+  - proto  # Bufがprotoファイルを探すディレクトリを指定します
